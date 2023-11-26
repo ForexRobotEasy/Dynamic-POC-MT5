@@ -1,0 +1,117 @@
+
+//+------------------------------------------------------------------+
+//|                                                  Dynamic POC MT5 |
+//|                                    forexroboteasy.com - Forex Robot Easy Team |
+//|                                     Terms of Reference:           |
+//| 1. Develop code for the Dynamic POC MT5 indicator that leverages  |
+//|    volume profiles to optimize trading strategies in forex trading. |
+//| 2. The indicator should calculate volume profiles dynamically and |
+//|    display the results as VAL, VAH, and POC curves.               |
+//| 3. The color of the DPOC curve sections should be determined by  |
+//|    comparing the volume of the POC levels of all profiles that   |
+//|    make up this curve.                                           |
+//| 4. The indicator should recalculate the curve in various         |
+//|    scenarios, including when the chart is scaled, scrolled,      |
+//|    when the timeframe is switched, and when a new candle appears.|
+//| 5. The value of the curve on the last candle should be           |
+//|    recalculated regularly, at intervals of once per second.       |
+//| 6. Implement the PocPeriod input variable to determine the       |
+//|    length of the base profile in candles.                        |
+//| 7. Ensure that the code includes only necessary trading functions|
+//|    related to the Dynamic POC MT5 indicator.                     |
+//|                                                                  |
+//| Note: The terms of reference should contain only code requirements|
+//| and requirements to develop the necessary features. The technical|
+//| specification should specify only the necessary trading functions|
+//| The size of the terms of reference should not exceed 1500-2000   |
+//| characters.                                                      |
+//+------------------------------------------------------------------+
+
+//+------------------------------------------------------------------+
+//|                                                                  |
+//|                       Dynamic POC MT5                            |
+//|                                                                  |
+//+------------------------------------------------------------------+
+
+#property copyright 'forexroboteasy.com - Forex Robot Easy Team'
+#property link      'https://www.forexroboteasy.com'
+
+//+------------------------------------------------------------------+
+//|                                                                  |
+//|                                                                  |
+//+------------------------------------------------------------------+
+
+int OnInit()
+{
+   // Initialization code
+   return(INIT_SUCCEEDED);
+}
+
+//+------------------------------------------------------------------+
+//|                                                                  |
+//|                                                                  |
+//+------------------------------------------------------------------+
+
+void OnDeinit(const int reason)
+{
+   // Deinitialization code
+}
+
+//+------------------------------------------------------------------+
+//|                                                                  |
+//|                                                                  |
+//+------------------------------------------------------------------+
+
+void OnTick()
+{
+   // Code to recalculate the curve on each tick
+}
+
+//+------------------------------------------------------------------+
+//|                                                                  |
+//|                                                                  |
+//+------------------------------------------------------------------+
+
+void OnChartEvent(const int id, const long &lparam, const double &dparam, const string &sparam)
+{
+   // Code to handle chart events (e.g., chart scaling, scrolling, etc.)
+}
+
+//+------------------------------------------------------------------+
+//|                                                                  |
+//|                                                                  |
+//+------------------------------------------------------------------+
+
+void OnCalculate(const int rates_total, const int prev_calculated, const datetime &time[], const double &open[], const double &high[], const double &low[], const double &close[], const long &tick_volume[], const long &volume[], const int &spread[])
+{
+   // Code to calculate volume profiles and display curves
+}
+
+//+------------------------------------------------------------------+
+//|                                                                  |
+//|                     Necessary Trading Functions                   |
+//|                                                                  |
+//+------------------------------------------------------------------+
+
+void OpenOrder(const string symbol, const int type, const double volume, const double price, const double stoploss, const double takeprofit)
+{
+   // Code to open an order
+}
+
+void CloseOrder(const int ticket)
+{
+   // Code to close an order
+}
+
+double GetAccountBalance()
+{
+   // Code to get the account balance
+   return 0.0;
+}
+
+//+------------------------------------------------------------------+
+//|                                                                  |
+//|                                                                  |
+//+------------------------------------------------------------------+
+
+// Logical conclusion of the program
